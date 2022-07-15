@@ -1,4 +1,4 @@
-Year,Country,id,Region,Happiness Score,Economy (GDP per Capita),Family,Health (Life Expectancy),Freedom,Trust (Government Corruption),Generosity,Dystopia + Residual
+Year,Country,code,Region,Happiness Score,Economy (GDP per Capita),Family,Health (Life Expectancy),Freedom,Trust (Government Corruption),Generosity,Dystopia + Residual
 2015,Afghanistan,AFG,South Asia,3.575,0.31982,0.30285,0.30335,0.23414,0.09719,0.3651,1.9521
 2015,Albania,ALB,Central and Eastern Europe,4.959,0.87867,0.80434,0.81325,0.35733,0.06413,0.14272,1.89894
 2015,Algeria,DZA,Middle East and Northern Africa,5.605,0.93929,1.07772,0.61766,0.28579,0.17383,0.07822,2.43209
