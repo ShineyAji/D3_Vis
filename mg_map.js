@@ -42,7 +42,7 @@ else if (mapoption == "Generosity"){ var colorScale = d3.scaleSequential(d3.inte
 
 Promise.all([
                 //d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"),
-                d3.json("https://raw.githubusercontent.com/ShineyAji/D3_Vis/main/data/world.geojson"),
+                d3.json("/data/world.geojson"),
                 d3.csv("https://raw.githubusercontent.com/ShineyAji/D3_Vis/main/data/"+byear+".csv", function(d)
                 {
                     data.set(d.code, +d[mapoption])
