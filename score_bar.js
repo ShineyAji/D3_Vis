@@ -22,8 +22,8 @@ var svg4 = d3.select("#score-bar2")
 
 
 // Parse the Data
+//csvdata = d3.csv("https://raw.githubusercontent.com/ShineyAji/D3_Vis/main/data/2021.csv")
 csvdata = d3.csv("https://raw.githubusercontent.com/ShineyAji/D3_Vis/main/data/2021.csv")
-
 .then(function(csvdata)
 {
     csvdata.sort(function(b, a) {
