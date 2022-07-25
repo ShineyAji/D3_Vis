@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>World Happiness Report</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="mgstyles.css">
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+    
+</head>
+
+<body onload="updateMap()">
+    <div class="header">
+        <h1>Are We Happy?</h1>
+    </div>
+    <div class="report_desc">
+       <br> <h1>Happiness Ladder Score: An Overview</h1> <br>
+        <p>
+            The goal of humanity is to strive for happiness, and while people become happy in their own unique ways, Is there
+            a way to accurately measure people’s happiness, both within and across societies? There are certain measures currently in use across countries to measure the overall happiness of an area. Since 2012, the United Nations publish their World Happiness Report, which measures the happiness of all the countries in the world that participate in the survey. 
+        </p>
+        <h2>World Happiness Report</h2>
+        <p>
+            The World Happiness Report is a landmark survey of the state of global happiness that ranks 156 countries by how happy their citizens perceive themselves to be. The report primarily uses data from the Gallup World Poll. Happiness Score of countries from World Happiness Report 2021 plotted in a choropleth map is given below.
+        </p>
+        
+        <div id = "sample1"></div>
+        <script src="happymap.js"></script>
+       
+        <h2>Gallup World Pool</h2>
+        <p>
+            In the Gallup World Poll respondents are asked (using fresh annual samples of 1,000 respondents aged 15 or over in each of more than 150 countries) to evaluate the quality of their lives on an 11-point ladder scale running from 0 to 10, with the bottom rung of the ladder (0) being the worst possible life for them and 10 being the best possible.  Each respondent provides a numerical response on this scale, referred to as the Cantril ladder. 
+        </p>
+        <h2>The happiest & saddest countries</h2>
+        <p>
+            In 2021, 149 countries were included in the Gallup World Pool. For the fourth year a row, Finland comntinues to occupy the top spot. Top ten spots has 5 Nordic countries. On the other side, Afghanistan has the least ladder score. There remains a large gap between the top and bottom countries. Within these groups, the top countries are more tightly grouped than are the bottom countries. Within the top group, national life evaluation scores have a gap of 0.40 between the 1st and 5th positions and another 0.21 between the 5th and 10th positions. Thus, there is a gap of about 0.6 points between the first and 10th positions. The bottom ten countries have a much bigger range of scores, covering almost 1.4 points. 
+        </p>
+        </div>
+        <div id = "score-bar" style="width: 50%; float:left"></div>
+        <div id = "score-bar2" style="width: 50%; float:right"></div>
+        <div class="report_desc">
+        <h2>What are the other factors in Happiness Report?</h2>
+        <p>
+            There are six key variables observed and reported in World Happiness Report. These variables are GDP per capita, social support, healthy life expectancy, freedom, generosity, and corruption. The happiness scores are not based on any index of these six factors. The scores are instead basedon individuals’ own assessments of their lives, as revealed by their answers to the single-item Cantril ladder life-evaluation question. Observed data on the six variables will be used to explain the observed variation of life evaluations across countries
+        </p>
+        <h3>Economy</h3>
+        <p>
+            Economy is measured based on adjusted GDP per Capita in terms of Purchasing PowerParity (PPP). Economy has the strongest correlations to overall happiness. Countries with greater GDPs thus demonstrate higher Overall Happiness Scores.
+        </p>
+        <h3>Health</h3>
+        <p>
+            The time series for healthy life expectancy at birth is constructed based on data from the World Health Organization (WHO) Global Health Observatory data repository
+        </p>
+        <h3>Family</h3>
+        <p>
+            Social support is the national average of the binary responses (0=no, 1=yes) to the Gallup World Poll (GWP) question “If you were in trouble, do you have relatives or friends you can count on to help you whenever you need them, or not?” 
+        </p>
+        <h3>Freedom</h3>
+        <p>
+            Freedom to make life choices is the national average of binary responses (0=no, 1=yes) to the GWP question “Are you satisfied or dissatisfied with your freedom to choose what you do with your life?” 
+        </p>
+        <h3>Trust</h3>
+        <p>
+            Perceptions of corruption are the average of binary answers to two GWP questions: “Is corruption widespread throughout the government in this country or not?” and “Is corruption widespread within businesses in this country or not?” Where data for government corruption are missing, the perception of business corruption is used as the overall corruption-perception measure
+        </p>
+        <h3>Generosity</h3>
+        <p>
+            Generosity is the residual of regressing the national average of GWP responses to the donation question “Have you donated money to a charity in the past month?” on log GDP per capita. 
+        </p>
+        <h2>Visual Analysis of Happiness Score & Contribution Factors</h2>
+        <p> 
+            Are you interested to see the happiness score of your country? Want to check if the people from certain country has the freedom to choose what they want to do with their life? Need to know if a particular country has widespread corruption? Interested to know if a country with highest GDP has good happiness score? You can find the answers for these questions and more by exploring the visualization below.
+        </p>
+        <p style="font-size:75%;">
+            Explore the happiness score & contribution factors score by selecting any option below. Also you can check how the scores changed between each years (2015-2021) by selecting the year from the dropdown.
+        </p>
+    </div>
+
+    <div class="map1radio">
+        <form>
+            <input type="radio" id="HScore" checked name="maps" value="Happiness_Score" style="visibility:hidden;" onclick="updateMap()">
+                <label class="mapradio" for="HScore">Happiness Score</label>
+            <input type="radio" id="HEconomy" name="maps" value="Economy" style="visibility:hidden;" onclick="updateMap()">
+                <label class="mapradio" for="HEconomy">Economy</label>
+            <input type="radio" id="HFamily" name="maps" value="Family" style="visibility:hidden;" onclick="updateMap()">
+                <label class="mapradio" for="HFamily">Family</label>
+            <input type="radio" id="HHealth" name="maps" value="Health" style="visibility:hidden;" onclick="updateMap()">
+                <label class="mapradio" for="HHealth">Health</label>
+            <input type="radio" id="HFreedom" name="maps" value="Freedom" style="visibility:hidden;" onclick="updateMap()">
+                <label class="mapradio" for="HFreedom">Freedom</label>
+            <input type="radio" id="HTrust" name="maps" value="Trust" style="visibility:hidden;" onclick="updateMap()">
+                <label class="mapradio" for="HTrust">Trust</label>
+            <input type="radio" id="HGenerosity" name="maps" value="Generosity" style="visibility:hidden;" onclick="updateMap()">
+                <label class="mapradio" for="HGenerosity">Generosity</label>
+
+        </form>
+    </div>
+
+    <div class="selchange" style="width: 30%; float:left">
+        <p>Drag the selector to check the position of other countries</p>
+    </div>
+    <div style="width: 20%; float:left">
+        <form class="years">
+            <select id="yearlist" name="year" class="yrselect" onchange="updateMap()">
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+            </select>
+        </form>
+        </div>
+        <div class="yrchange" style="width: 50%; float:right">
+            <p>Switch the year to see the transition in score</p>
+        </div>
+
+        <div style="width: 70%; float:right" id = "My_Map"></div>
+        <div style="width: 20%;" id = "AllCountry"></div> 
+    
+    <script src="mg_map.js"></script>
+    <script src="AllCountry-bar.js"></script>
+    <script src="score_bar.js"></script>
+</body>
+</html>
