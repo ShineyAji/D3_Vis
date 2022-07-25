@@ -14,8 +14,8 @@ const cprojection = d3.geoMercator()
                     .translate([width/2, height/2]);
 const cdata = new Map();
 Promise.all([
-    d3.json("/data/world.geojson"),
-    d3.csv("/data/"+cyear+".csv", function(d)
+    d3.json("https://raw.githubusercontent.com/ShineyAji/D3_Vis/main/data/world.geojson"),
+    d3.csv("https://raw.githubusercontent.com/ShineyAji/D3_Vis/main/data/"+cyear+".csv", function(d)
     {
         cdata.set(d.code, +d[factor])
     })
