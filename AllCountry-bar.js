@@ -117,6 +117,14 @@ svg5.append("text")
 .style("font-size", "12px")
 .attr("transform", "translate(-10,0)rotate(-90)");
 
+ svg5.append("text")      
+.attr("x", -280)
+.attr("y",605)
+.style("text-anchor", "right")
+.text("Low Score")
+.style("fill","gray")
+.style("font-size", "12px")
+.attr("transform", "translate(-10,0)rotate(-90)");
   
 if (isScrollDisplayed)
 {
