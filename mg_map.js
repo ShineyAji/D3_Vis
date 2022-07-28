@@ -505,6 +505,7 @@ Promise.all([
                 {
                     note: { 
                             label:"Hover over a country to check its Happiness Score",
+                            title: "Happiness",
                             wrap: 500
                             },
                     type: d3.annotationLabel,
@@ -522,6 +523,7 @@ Promise.all([
                 {
                     note: { 
                             label:"Hover over a country to check its Economy Score",
+                            title: "Economy",
                             wrap: 500
                             },
                     type: d3.annotationLabel,
@@ -538,6 +540,7 @@ Promise.all([
                 {
                     note: { 
                             label:"Hover over a country to check its Family Score",
+                            title: "Family",
                             wrap: 500
                             },
                     type: d3.annotationLabel,
@@ -570,6 +573,7 @@ Promise.all([
                 {
                     note: { 
                             label:"Hover over a country to check its Generosity Score",
+                            title: "Generosity",
                             wrap: 500
                             },
                     type: d3.annotationLabel,
