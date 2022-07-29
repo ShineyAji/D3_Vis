@@ -119,7 +119,7 @@ svg5.append("text")
 
  svg5.append("text")      
 .attr("x", -280)
-.attr("y",500)
+.attr("y",605)
 .style("text-anchor", "right")
 .text("Low Score")
 .style("fill","gray")
