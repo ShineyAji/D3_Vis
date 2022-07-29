@@ -1,3 +1,4 @@
+//Choropleth Map Reference: https://d3-graph-gallery.com/graph/choropleth_hover_effect.html
 
 var width = '800'
 var height = '600'
