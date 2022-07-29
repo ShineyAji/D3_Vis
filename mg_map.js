@@ -504,7 +504,7 @@ Promise.all([
             const hapscoreannotations = [
                 {
                     note: { 
-                            label:"Hover over a country to check its Happiness Score",
+                            label:"Hover over a country in the map to check its Happiness Score",
                             title: "Happiness",
                             wrap: 500
                             },
@@ -522,7 +522,7 @@ Promise.all([
             const ecoannotations = [
                 {
                     note: { 
-                            label:"Hover over a country to check its Economy Score",
+                            label:"Hover over a country in the map to check its Economy Score",
                             title: "Economy",
                             wrap: 500
                             },
@@ -539,7 +539,7 @@ Promise.all([
             const famannotations = [
                 {
                     note: { 
-                            label:"Hover over a country to check its Family Score",
+                            label:"Hover over a country in the map to check its Family Score",
                             title: "Family",
                             wrap: 500
                             },
@@ -556,7 +556,7 @@ Promise.all([
             const freeannotations = [
                 {
                     note: { 
-                            label:"Hover over a country to check its Freedom Score'",
+                            label:"Hover over a country in the map to check its Freedom Score'",
                             title: "Freedom:",
                             wrap: 500
                             },
@@ -572,7 +572,7 @@ Promise.all([
             const genannotations = [
                 {
                     note: { 
-                            label:"Hover over a country to check its Generosity Score",
+                            label:"Hover over a country in the map to check its Generosity Score",
                             title: "Generosity",
                             wrap: 500
                             },
@@ -588,7 +588,7 @@ Promise.all([
             const helannotations = [
                 {
                     note: { 
-                            label:"Hover over a country to check its Health Score",
+                            label:"Hover over a country in the map to check its Health Score",
                             title: "Health",
                             wrap: 500
                             },
@@ -604,7 +604,7 @@ Promise.all([
             const trustannotations = [
                 {
                     note: { 
-                            label:"Hover over a country to check its Trust Score",
+                            label:"Hover over a country in the map to check its Trust Score",
                             title: "Trust",
                             wrap: 500
                             },
