@@ -1,8 +1,11 @@
-// set the dimensions and margins of the graph
+//Scroll Chart Reference: http://bl.ocks.org/cdagli/728e1f4509671b7de16d5f7f6bfee6f0
+
+
 var bmargin = {top: 40, right: 30, bottom: 60, left: 150},
 bwidth = 450 - bmargin.left - bmargin.right,
 bheight = 400 - bmargin.top - bmargin.bottom;
-// append the svg object to the body of the page
+
+
 var svg3 = d3.select("#score-bar")
 .append("svg")
 .attr("width", bwidth + bmargin.left + bmargin.right)
