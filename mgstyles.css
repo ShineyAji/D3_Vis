@@ -75,13 +75,13 @@ body {
   .yrchange{
     font-size: 12px;
     font-style: italic;
-    color:#0123FA
+    color:gray;
   }
 
   .selchange{
     font-size: 12px;
     font-style: italic;
-    color:#0123FA;
+    color:gray;
     text-align: center;
   }
   
